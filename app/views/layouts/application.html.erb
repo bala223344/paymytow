@@ -4,8 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <title><%= content_for?(:title) ? yield(:title) : "Paynow.io" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Paymytow.com" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Kiosk" %>">
+	    <meta name="keywords" content="">
+
+	  <link rel="icon"       type="image/png"       href="<%=asset_path("favicon.png") %>"
+      >
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
 
     <%= csrf_meta_tags %>
